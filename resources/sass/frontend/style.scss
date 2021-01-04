@@ -1,0 +1,376 @@
+:root{
+    --main-black:#222222;
+    --main-yellow:#ffc000;
+    --main-blue:#179bd7;
+    --main-dark:#1e2022;
+    --main-smoke:rgba(0, 0, 0, 0.125);
+}
+*{
+    //a,p,span{
+    //    color:var(--main-black)!important;
+    //}
+    //a{
+    //    text-decoration: none!important;
+    //}
+    .normal-bold{
+        font-weight: 600;
+    }
+    .text-grey{
+        color:grey;
+    }
+    .text-blue{
+        color:var(--main-blue);
+    }
+    .text-main-dark{
+        color:var(--main-black);
+    }
+    .text-yellow{
+        color:var(--main-yellow);
+    }
+    .bg-main-dark{
+        background: var(--main-dark)!important;
+    }
+    .bg-smoke{
+        background: #f8f8f8;
+    }
+    .text-active-yellow{
+        transition: 0.3s;
+    }
+    .text-active-yellow:hover{
+        color: #ffc000!important;
+    }
+    .main-btn{
+        background: var(--main-yellow) !important;
+        a{
+            color: black;
+        }
+        font-weight: 300;
+    }
+    .main-btn:hover{
+        a{
+            color: var(--main-yellow);
+        }
+        background: black!important;
+    }
+}
+.vue-header{
+    .info{
+        background: #222222;
+        span{
+            color: white;
+        }
+        .btn-group{
+            background: #ffc000;
+            .btn:first-child{
+                border-right: solid 1px #222222;
+            }
+        }
+    }
+    .navbar-brand{
+        img{
+            max-width: 178px;
+        }
+    }
+    .menu{
+        a{
+            color:#222222!important;
+        }
+        .nav-item:hover{
+            >a{
+                color: #ffc000;
+            }
+        }
+        a.dropdown-item:hover{
+            color: #ffc000;
+        }
+        .dropdown-menu{
+            border-top:2px solid #ffc000;
+        }
+    }
+}
+#home-main{
+    .home-banner{
+        max-height: 80vh;
+        object-fit: cover;
+    }
+    #home-about-bestb{
+        .component-title{
+            h2,p{
+                text-align: center;
+            }
+        }
+        .home-about-bestb-list{
+            .col{
+                .title h3,.title-border-bottom{
+                    transition: 0.3s;
+                }
+                img,.title-border-bottom{
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    max-height: 150px;
+                    height: auto;
+                }
+                .title-border-bottom{
+                    border-bottom: solid 0.15rem var(--main-black);
+                }
+                .title:hover{
+                    h3{
+                        color: var(--main-yellow);
+                    }
+                    .title-border-bottom{
+                        border-bottom: solid 0.15rem var(--main-yellow);
+                    }
+                }
+            }
+        }
+    }
+    #home-khoahoc{
+        .card{
+            img.teacher-avata{
+                border-radius: 100%;
+                max-width: 2rem;
+            }
+        }
+        .teach-info:hover{
+            span a{
+                color:var(--main-yellow);
+            }
+        }
+    }
+
+    #home-news,#home-hinhanh-hocvien,#home-feed-back{
+        .title-border-bottom{
+            border-bottom: solid  0.1rem var(--main-yellow);
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .card:hover{
+            border-bottom:  0.15rem var(--main-yellow);
+        }
+    }
+
+    #home-dich-vu-hot{
+        >.row>.col{
+            .title-border-bottom{
+                border-bottom: solid 0.1rem var(--main-yellow);
+            }
+        }
+
+        .khoa-hoc-hot{
+            .card{
+                border:none;
+                border-bottom: solid 1px grey;
+                .card-body{
+                    padding:0.5rem 1.25rem 1.25rem 1.25rem
+                }
+            }
+            .teach-info{
+                img{
+                    width: 30px;
+                    border-radius: 100%;
+                }
+            }
+        }
+        .cau-hoi-hot{
+            button{
+                background: transparent!important;
+                border:none;
+                color:black;
+            }
+            button:focus{
+                box-shadow: none!important;
+            }
+        }
+    }
+}
+#footer{
+    bottom: 0;
+
+    .striker{
+        border-bottom: solid 1px grey;
+    }
+    padding-top:5rem;
+    .title-border-bottom{
+        margin:1rem 0;
+        border-bottom: solid 1px grey;
+    }
+    .card{
+        background: none;
+        border:none;
+    }
+    .footer-title{
+        color:white;
+        font-size:large
+    }
+    .footer-social{
+        a{
+            font-size:xx-large;
+        }
+        a:hover{
+            i{
+                color: var(--main-yellow);
+            }
+        }
+    }
+}
+//component
+.teach-info{
+    img{
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+}
+.khoahoc-item{
+    .card-header{
+        padding:0!important;
+    }
+}
+#course-show .banner{
+    background-image: url("/frontend/img/banner-course.jpg");
+}
+#news-show .banner,#list-news .banner{
+    background-image: url("/frontend/img/newspaper_banner.jpg");
+}
+#teacher-show .banner{
+    background-image: url("/frontend/img/teacher-banner.jpg");
+}
+#list-cousers .banner{
+    background-image: url("/frontend/img/a97625dae95e15004c4f.jpg");
+}
+#course-show,.banner-top,#news-show,#list-cousers,#list-news{
+    .banner{
+
+        background-position: center center;
+        background-repeat: none;
+        background-size: 100%;
+        height: 30vh;
+        width: 100%;
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+    }
+    h2{
+        text-align: center;
+        text-shadow: 2px 2px 2px black;
+        color: white;
+    }
+    .course-name{
+        top:50%;
+        left:0;
+        z-index: 2;
+        transform: translateY(-50%);
+    }
+    .breadcrumb{
+        background: none!important;
+        .breadcrumb-item{
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+.ads-border-title{
+    margin:2rem 0;
+    border-bottom: solid 1px var(--main-smoke);
+    div{
+        width: 15%;
+        border-bottom: solid 2px var(--main-yellow);
+        margin-bottom: -1px;
+    }
+}
+
+
+#introduction-page{
+    .banner-intro{
+        background: url("/frontend/img/Untitled-1-01.jpg") center center;
+        background-size: 100% auto;
+    }
+    .introduction-form-banner{
+        display: flex;
+
+        form{
+            width: 30%;
+            margin-right: 5rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            padding:5rem 1rem;
+            background: rgba(0, 0, 0, 0.5);
+            label{
+                color:var(--main-yellow);
+            }
+        }
+    }
+    .intro-content-title{
+        border-left: solid 5px var(--main-black);
+        padding:0.5rem 1rem;
+        text-transform: uppercase;
+    }
+    .intro-content-content{
+        padding-top:1rem
+    }
+    .introduction-info{
+        background-size: 100% auto;
+        background: linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.45)
+        ), url("/frontend/img/a97625dae95e15004c4f.jpg") center center;
+
+        .introduction-info-item{
+            padding:0 4rem;
+        }
+        .border-circle{
+            position: relative;
+            width: 100%;
+            padding-top: 100%;
+            span{
+                border:solid 2px white;
+                border-radius: 100%;
+                position:  absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                font-size:2rem;
+                color:white;
+            }
+        }
+    }
+    .introduction-teacher{
+        .container{
+            padding:0 6rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 959px) {
+    #introduction-page{
+        .banner-intro{
+            background-size: auto 100% !important;
+            background-repeat: no-repeat!important;
+        }
+        .introduction-form-banner{
+            padding: 0!important;
+            form{
+                width: 100% !important;
+                margin:0!important;
+
+            }
+        }
+        .introduction-teacher .container{
+            padding:0!important;;
+        }
+        .introduction-info{
+            .introduction-info-item{
+                padding:0.5rem!important;
+            }
+        }
+
+    }
+}

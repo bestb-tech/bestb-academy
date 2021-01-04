@@ -1,0 +1,398 @@
+:root {
+  --main-black: #222222;
+  --main-yellow: #ffc000;
+  --main-blue: #179bd7;
+  --main-dark: #1e2022;
+  --main-smoke: rgba(0, 0, 0, 0.125);
+}
+
+* .normal-bold {
+  font-weight: 600;
+}
+
+* .text-grey {
+  color: grey;
+}
+
+* .text-blue {
+  color: var(--main-blue);
+}
+
+* .text-main-dark {
+  color: var(--main-black);
+}
+
+* .text-yellow {
+  color: var(--main-yellow);
+}
+
+* .bg-main-dark {
+  background: var(--main-dark) !important;
+}
+
+* .bg-smoke {
+  background: #f8f8f8;
+}
+
+* .text-active-yellow {
+  transition: 0.3s;
+}
+
+* .text-active-yellow:hover {
+  color: #ffc000 !important;
+}
+
+* .main-btn {
+  background: var(--main-yellow) !important;
+  font-weight: 300;
+}
+
+* .main-btn a {
+  color: black;
+}
+
+* .main-btn:hover {
+  background: black !important;
+}
+
+* .main-btn:hover a {
+  color: var(--main-yellow);
+}
+
+.vue-header .info {
+  background: #222222;
+}
+
+.vue-header .info span {
+  color: white;
+}
+
+.vue-header .info .btn-group {
+  background: #ffc000;
+}
+
+.vue-header .info .btn-group .btn:first-child {
+  border-right: solid 1px #222222;
+}
+
+.vue-header .navbar-brand img {
+  max-width: 178px;
+}
+
+.vue-header .menu a {
+  color: #222222 !important;
+}
+
+.vue-header .menu .nav-item:hover > a {
+  color: #ffc000;
+}
+
+.vue-header .menu a.dropdown-item:hover {
+  color: #ffc000;
+}
+
+.vue-header .menu .dropdown-menu {
+  border-top: 2px solid #ffc000;
+}
+
+#home-main .home-banner {
+  max-height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#home-main #home-about-bestb .component-title h2,
+#home-main #home-about-bestb .component-title p {
+  text-align: center;
+}
+
+#home-main #home-about-bestb .home-about-bestb-list .col .title h3,
+#home-main #home-about-bestb .home-about-bestb-list .col .title-border-bottom {
+  transition: 0.3s;
+}
+
+#home-main #home-about-bestb .home-about-bestb-list .col img,
+#home-main #home-about-bestb .home-about-bestb-list .col .title-border-bottom {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-height: 150px;
+  height: auto;
+}
+
+#home-main #home-about-bestb .home-about-bestb-list .col .title-border-bottom {
+  border-bottom: solid 0.15rem var(--main-black);
+}
+
+#home-main #home-about-bestb .home-about-bestb-list .col .title:hover h3 {
+  color: var(--main-yellow);
+}
+
+#home-main #home-about-bestb .home-about-bestb-list .col .title:hover .title-border-bottom {
+  border-bottom: solid 0.15rem var(--main-yellow);
+}
+
+#home-main #home-khoahoc .card img.teacher-avata {
+  border-radius: 100%;
+  max-width: 2rem;
+}
+
+#home-main #home-khoahoc .teach-info:hover span a {
+  color: var(--main-yellow);
+}
+
+#home-main #home-news .title-border-bottom,
+#home-main #home-hinhanh-hocvien .title-border-bottom,
+#home-main #home-feed-back .title-border-bottom {
+  border-bottom: solid 0.1rem var(--main-yellow);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#home-main #home-news .card:hover,
+#home-main #home-hinhanh-hocvien .card:hover,
+#home-main #home-feed-back .card:hover {
+  border-bottom: 0.15rem var(--main-yellow);
+}
+
+#home-main #home-dich-vu-hot > .row > .col .title-border-bottom {
+  border-bottom: solid 0.1rem var(--main-yellow);
+}
+
+#home-main #home-dich-vu-hot .khoa-hoc-hot .card {
+  border: none;
+  border-bottom: solid 1px grey;
+}
+
+#home-main #home-dich-vu-hot .khoa-hoc-hot .card .card-body {
+  padding: 0.5rem 1.25rem 1.25rem 1.25rem;
+}
+
+#home-main #home-dich-vu-hot .khoa-hoc-hot .teach-info img {
+  width: 30px;
+  border-radius: 100%;
+}
+
+#home-main #home-dich-vu-hot .cau-hoi-hot button {
+  background: transparent !important;
+  border: none;
+  color: black;
+}
+
+#home-main #home-dich-vu-hot .cau-hoi-hot button:focus {
+  box-shadow: none !important;
+}
+
+#footer {
+  bottom: 0;
+  padding-top: 5rem;
+}
+
+#footer .striker {
+  border-bottom: solid 1px grey;
+}
+
+#footer .title-border-bottom {
+  margin: 1rem 0;
+  border-bottom: solid 1px grey;
+}
+
+#footer .card {
+  background: none;
+  border: none;
+}
+
+#footer .footer-title {
+  color: white;
+  font-size: large;
+}
+
+#footer .footer-social a {
+  font-size: xx-large;
+}
+
+#footer .footer-social a:hover i {
+  color: var(--main-yellow);
+}
+
+.teach-info img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+
+.khoahoc-item .card-header {
+  padding: 0 !important;
+}
+
+#course-show .banner {
+  background-image: url("/frontend/img/banner-course.jpg");
+}
+
+#news-show .banner,
+#list-news .banner {
+  background-image: url("/frontend/img/newspaper_banner.jpg");
+}
+
+#teacher-show .banner {
+  background-image: url("/frontend/img/teacher-banner.jpg");
+}
+
+#list-cousers .banner {
+  background-image: url("/frontend/img/a97625dae95e15004c4f.jpg");
+}
+
+#course-show .banner,
+.banner-top .banner,
+#news-show .banner,
+#list-cousers .banner,
+#list-news .banner {
+  background-position: center center;
+  background-repeat: none;
+  background-size: 100%;
+  height: 30vh;
+  width: 100%;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+#course-show h2,
+.banner-top h2,
+#news-show h2,
+#list-cousers h2,
+#list-news h2 {
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  color: white;
+}
+
+#course-show .course-name,
+.banner-top .course-name,
+#news-show .course-name,
+#list-cousers .course-name,
+#list-news .course-name {
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+
+#course-show .breadcrumb,
+.banner-top .breadcrumb,
+#news-show .breadcrumb,
+#list-cousers .breadcrumb,
+#list-news .breadcrumb {
+  background: none !important;
+}
+
+#course-show .breadcrumb .breadcrumb-item a,
+.banner-top .breadcrumb .breadcrumb-item a,
+#news-show .breadcrumb .breadcrumb-item a,
+#list-cousers .breadcrumb .breadcrumb-item a,
+#list-news .breadcrumb .breadcrumb-item a {
+  text-decoration: none;
+}
+
+.ads-border-title {
+  margin: 2rem 0;
+  border-bottom: solid 1px var(--main-smoke);
+}
+
+.ads-border-title div {
+  width: 15%;
+  border-bottom: solid 2px var(--main-yellow);
+  margin-bottom: -1px;
+}
+
+#introduction-page .banner-intro {
+  background: url("/frontend/img/Untitled-1-01.jpg") center center;
+  background-size: 100% auto;
+}
+
+#introduction-page .introduction-form-banner {
+  display: flex;
+}
+
+#introduction-page .introduction-form-banner form {
+  width: 30%;
+  margin-right: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 5rem 1rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#introduction-page .introduction-form-banner form label {
+  color: var(--main-yellow);
+}
+
+#introduction-page .intro-content-title {
+  border-left: solid 5px var(--main-black);
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+
+#introduction-page .intro-content-content {
+  padding-top: 1rem;
+}
+
+#introduction-page .introduction-info {
+  background-size: 100% auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("/frontend/img/a97625dae95e15004c4f.jpg") center center;
+}
+
+#introduction-page .introduction-info .introduction-info-item {
+  padding: 0 4rem;
+}
+
+#introduction-page .introduction-info .border-circle {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+#introduction-page .introduction-info .border-circle span {
+  border: solid 2px white;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+
+#introduction-page .introduction-teacher .container {
+  padding: 0 6rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 959px) {
+  #introduction-page .banner-intro {
+    background-size: auto 100% !important;
+    background-repeat: no-repeat !important;
+  }
+
+  #introduction-page .introduction-form-banner {
+    padding: 0 !important;
+  }
+
+  #introduction-page .introduction-form-banner form {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  #introduction-page .introduction-teacher .container {
+    padding: 0 !important;
+  }
+
+  #introduction-page .introduction-info .introduction-info-item {
+    padding: 0.5rem !important;
+  }
+}
+
