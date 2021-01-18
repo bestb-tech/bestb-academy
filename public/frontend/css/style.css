@@ -254,8 +254,21 @@
   background-size: 100%;
   height: 30vh;
   width: 100%;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+}
+
+#course-show .banner:after,
+.banner-top .banner:after,
+#news-show .banner:after,
+#list-cousers .banner:after,
+#list-news .banner:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #course-show h2,
@@ -393,6 +406,24 @@
 
   #introduction-page .introduction-info .introduction-info-item {
     padding: 0.5rem !important;
+  }
+
+  .new-item article {
+    flex-direction: row;
+  }
+
+  .new-item img {
+    max-width: 30%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .new-item .card-body {
+    padding: 0.5rem;
+  }
+
+  .new-item .card-body span {
+    display: none;
   }
 }
 

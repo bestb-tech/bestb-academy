@@ -1,5 +1,5 @@
 <template>
-    <div class="p-3 col col-lg-3">
+    <div class="p-3 col-12 col-lg-3 new-item">
         <a v-bind:href="'/news/' + item.slug" class="text-decoration-none">
             <b-card
                 v-bind:title="item.name"
@@ -7,8 +7,7 @@
                 img-alt="Image"
                 img-top
                 tag="article"
-                style="max-width: 20rem;"
-                class="mb-2 h-100"
+                class="mb-lg-2 h-100"
             >
                 <b-card-text>
                     <p v-html="short_description">{{short_description}}</p>

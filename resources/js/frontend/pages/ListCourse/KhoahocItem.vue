@@ -25,12 +25,13 @@
                     </div>
                 </b-card-body>
                 <b-card-footer>
-                    <i class="fas fa-users"></i>
-                    {{item.countMembers}}
-                    <i class="far fa-comment-dots"></i>
-                    {{item.countComments}}
-                    rate:
-                    {{item.starRate}}
+<!--                    <i class="fas fa-users"></i>-->
+<!--                    {{item.countMembers}}-->
+<!--                    <i class="far fa-comment-dots"></i>-->
+<!--                    {{item.countComments}}-->
+<!--                    rate:-->
+<!--                    {{item.starRate}}-->
+                    <a v-bind:href="item.google_form_url" class=" btn text-yellow text-decoration-none w-100 text-grey ">ĐĂNG KÍ NGAY</a>
                 </b-card-footer>
 
             </b-card>
