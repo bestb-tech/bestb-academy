@@ -24,7 +24,6 @@
     <script src="{{asset('/bower_components/jquery/dist/jquery.js')}}" ></script>
 {{--    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>--}}
 {{--    <script src="{{asset('/bower_components/bootstrap/dist/js/bootstrap.min.js')}}" ></script>--}}
-    <script src="/frontend/js/main.js" ></script>
     <script src="{{ asset('/frontend/js/app.js') }}" defer></script>
 
 
@@ -33,5 +32,7 @@
     <div id="app">
         @yield('content')
     </div>
+    <script src="{{asset('/frontend/js/main.js')}}" ></script>
+
 </body>
 </html>

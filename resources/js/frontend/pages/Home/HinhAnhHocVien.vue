@@ -29,24 +29,12 @@
                 items:[
                     [
                         "/frontend/img/a97625dae95e15004c4f.jpg",
-                        "/frontend/img/Untitled-1-01.jpg",
-                        "/frontend/img/Untitled-1-03.jpg",
-                        "/frontend/img/workplace-1245776_1920 (1).jpg",
+                    ],
+                    [
                         "/frontend/img/Untitled-1-03.jpg",
                     ],
                     [
                         "/frontend/img/Untitled-1-01.jpg",
-                        "/frontend/img/a97625dae95e15004c4f.jpg",
-                        "/frontend/img/workplace-1245776_1920 (1).jpg",
-                        "/frontend/img/Untitled-1-03.jpg",
-                        "/frontend/img/Untitled-1-03.jpg",
-                    ],
-                    [
-                        "/frontend/img/Untitled-1-03.jpg",
-                        "/frontend/img/Untitled-1-01.jpg",
-                        "/frontend/img/Untitled-1-03.jpg",
-                        "/frontend/img/a97625dae95e15004c4f.jpg",
-                        "/frontend/img/workplace-1245776_1920 (1).jpg",
                     ],
                 ],
                 modal_src:null,

@@ -21,12 +21,13 @@
                     </div>
                 </b-card-body>
                 <b-card-footer>
-                    <i class="fas fa-users"></i>
-                    999
-                    <i class="far fa-comment-dots"></i>
-                    999
-                    rate:
-                    5
+<!--                    <i class="fas fa-users"></i>-->
+<!--                    999-->
+<!--                    <i class="far fa-comment-dots"></i>-->
+<!--                    999-->
+<!--                    rate:-->
+<!--                    5-->
+                    <a v-bind:href="item.google_form_url" class=" btn text-yellow text-decoration-none w-100 text-grey ">ĐĂNG KÍ NGAY</a>
                 </b-card-footer>
 
             </b-card>
