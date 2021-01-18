@@ -242,14 +242,23 @@
 }
 #course-show,.banner-top,#news-show,#list-cousers,#list-news{
     .banner{
-
         background-position: center center;
         background-repeat: none;
         background-size: 100%;
         height: 30vh;
         width: 100%;
-        filter: blur(2px);
-        -webkit-filter: blur(2px);
+        //filter: blur(2px);
+        //-webkit-filter: blur(2px);
+    }
+    .banner:after {
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-color: rgba(0, 0, 0, 0.5);
     }
     h2{
         text-align: center;
@@ -372,5 +381,20 @@
             }
         }
 
+    }
+    .new-item{
+        article{
+            flex-direction: row;
+        }
+        img{
+            max-width: 30%;
+            object-fit: cover;
+        }
+        .card-body{
+            padding: .5rem;
+            span{
+                display: none;
+            }
+        }
     }
 }

@@ -11,7 +11,7 @@
             <news></news>
         </div>
         <div>
-            <feed-back></feed-back>
+<!--            <feed-back></feed-back>-->
 <!--            <dich-vu-hot></dich-vu-hot>-->
         </div>
         <div class="bg-smoke">
